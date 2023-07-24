@@ -49,12 +49,10 @@ for (let i = 0; i < aLinks.length; i++) {
   aLinks[i].setAttribute("class", "italic")
 }
 
-aLinks[0].textContent = "Servisler"
-aLinks[1].textContent = "Ürünler"
-aLinks[2].textContent = "Vizyon"
-aLinks[3].textContent = "Özellikler"
-aLinks[4].textContent = "Hakkımızda"
-aLinks[5].textContent = "İletişim"
+const linkArray = ["Servisler","Ürünler","Vizyon","Özellikler","Hakkımızda","İletişim"]
+for(let i = 0;i<linkArray.length;i++){
+  aLinks[i].textContent = linkArray[i]
+}
 
 
 const firstImg = document.getElementById("logo-img")
