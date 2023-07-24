@@ -44,9 +44,9 @@ console.log('Proje açıldı!')
 
 /* Kodlar Buradan aşağıya */
 
-const aLinks = document.querySelectorAll("a");
-for(let i = 0; i<aLinks.length;i++){
-  aLinks[i].setAttribute("class","italic") 
+const aLinks = document.querySelectorAll("nav > a");
+for (let i = 0; i < aLinks.length; i++) {
+  aLinks[i].setAttribute("class", "italic")
 }
 
 aLinks[0].textContent = "Servisler"
@@ -59,7 +59,7 @@ aLinks[5].textContent = "İletişimler"
 
 const firstImg = document.getElementById("logo-img")
 
-firstImg.setAttribute("src","../mocks/img/logo.png")
+firstImg.setAttribute("src", "../mocks/img/logo.png")
 
 
 const domMuk = document.querySelector(".cta-text > h1")
@@ -68,9 +68,16 @@ domMuk.textContent = "Bu DOM Mükemmel"
 
 const domButton = document.querySelector(".cta-text > button")
 
-domButton.textContent="Başlayın"
+domButton.textContent = "Başlayın"
 
 const yuvarlakKodResmi = document.getElementById("cta-img")
 
-yuvarlakKodResmi.setAttribute("src","../mocks/img/cta.png")
+yuvarlakKodResmi.setAttribute("src", "../mocks/img/cta.png")
 
+const ozelliklerKismiH4 = document.querySelector(".main-content > .top-content > .text-content > h4")
+
+ozelliklerKismiH4.textContent = "Özellikler"
+
+const ozelliklerKismiP = document.querySelector(".main-content > .top-content > .text-content > p")
+
+ozelliklerKismiP.textContent = "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
