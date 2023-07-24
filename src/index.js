@@ -43,3 +43,34 @@ console.log('Proje açıldı!')
 
 
 /* Kodlar Buradan aşağıya */
+
+const aLinks = document.querySelectorAll("a");
+for(let i = 0; i<aLinks.length;i++){
+  aLinks[i].setAttribute("class","italic") 
+}
+
+aLinks[0].textContent = "Servisler"
+aLinks[1].textContent = "Ürünler"
+aLinks[2].textContent = "Vizyon"
+aLinks[3].textContent = "Özellikler"
+aLinks[4].textContent = "Hakkımızda"
+aLinks[5].textContent = "İletişimler"
+
+
+const firstImg = document.getElementById("logo-img")
+
+firstImg.setAttribute("src","../mocks/img/logo.png")
+
+
+const domMuk = document.querySelector(".cta-text > h1")
+
+domMuk.textContent = "Bu DOM Mükemmel"
+
+const domButton = document.querySelector(".cta-text > button")
+
+domButton.textContent="Başlayın"
+
+const yuvarlakKodResmi = document.getElementById("cta-img")
+
+yuvarlakKodResmi.setAttribute("src","../mocks/img/cta.png")
+
