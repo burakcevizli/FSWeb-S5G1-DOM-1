@@ -74,10 +74,13 @@ const yuvarlakKodResmi = document.getElementById("cta-img")
 
 yuvarlakKodResmi.setAttribute("src", "../mocks/img/cta.png")
 
-const ozelliklerKismiH4 = document.querySelector(".main-content > .top-content > .text-content > h4")
+const ozelliklerKismiH4 = document.querySelectorAll(".main-content > .top-content > .text-content > h4")
 
-ozelliklerKismiH4.textContent = "Özellikler"
+const ozelliklerKismiP = document.querySelectorAll(".main-content > .top-content > .text-content > P")
 
-const ozelliklerKismiP = document.querySelector(".main-content > .top-content > .text-content > p")
+ozelliklerKismiH4[0].textContent = "Özellikler"
 
-ozelliklerKismiP.textContent = "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ozelliklerKismiP[0].textContent = "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+ozelliklerKismiH4[1].textContent = "Hakkında"
+ozelliklerKismiP[1].textContent = "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
