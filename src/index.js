@@ -83,4 +83,12 @@ ozelliklerKismiH4[0].textContent = "Özellikler"
 ozelliklerKismiP[0].textContent = "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 ozelliklerKismiH4[1].textContent = "Hakkında"
+
 ozelliklerKismiP[1].textContent = "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+const middleImg = document.getElementById("middle-img" )
+
+middleImg.setAttribute("src","../mocks/img/accent.png")
+
+
